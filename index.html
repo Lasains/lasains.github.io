@@ -1,92 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-    <head>
-        <meta charset="utf-8"/>
-        <title>Beranda - Backend Developer Portfolio</title>
-        <link rel="stylesheet" href="css/index.css">
-    </head>
-    <body>
-        <nav class="navbar">
-            <div class="nav-content">
-                <a class="brand" href="#">AetherCodev</a>
-                <div class="nav-links">
-                    <a class="nav-link active" href="index.html">Beranda</a>
-                    <a class="nav-link" href="about.html">Tentang</a>
-                    <a class="nav-link" href="project.html">Proyek</a>
-                    <a class="nav-link" href="contact.html">Kontak</a>
-                </div>
-            </div>
-        </nav>
-        <main>
-            <section class="hero">
-                <div class="hero-text">
-                    Pengembang Backend.<br/>
-                    Vibe Coder.
-                </div>
-                <div class="terminal">
-                    <span class="prompt">$</span> <span class="typing-container">whoami</span>
-                </div>
-            </section>
-            <section>
-                <h2 class="section-title">Log Proyek</h2>
-                <div class="log-container">
-                    <article class="log-entry">
-                        <div class="log-dot"></div>
-                        <header class="log-header">
-                            <time class="log-date">2025.12</time>
-                            <h3 class="log-title">Nexventory — proyek pribadi</h3>
-                        </header>
-                        <div class="log-desc">
-                            Aplikasi manajemen inventori dan transaksi jual-beli berbasis Flask, dengan peran admin dan penjual terpisah plus simulasi pembayaran QRIS yang mengecek status pembayaran secara berkala. Sudah di-deploy dan bisa diakses publik.
-                        </div>
-                        <footer class="log-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Flask</span>
-                            <span class="tag">SQLAlchemy</span>
-                            <span class="tag">MySQL</span>
-                        </footer>
-                    </article>
-                    <article class="log-entry">
-                        <div class="log-dot"></div>
-                        <header class="log-header">
-                            <time class="log-date">2025.12</time>
-                            <h3 class="log-title">Situtur AI — kolaborasi hackathon</h3>
-                        </header>
-                        <div class="log-desc">
-                            Sistem manajemen tugas dan pekerja yang dibangun bareng tim untuk hackathon: backend Express yang terhubung ke bot WhatsApp dan Gemini AI, dengan dashboard React yang menampilkan grafik performa langsung dari database.
-                        </div>
-                        <footer class="log-tags">
-                            <span class="tag">Node.js</span>
-                            <span class="tag">Express</span>
-                            <span class="tag">MySQL</span>
-                            <span class="tag">WhatsApp-web.js</span>
-                            <span class="tag">Gemini AI</span>
-                            <span class="tag">React</span>
-                        </footer>
-                    </article>
-                </div>
-            </section>
-            <section class="contact-section">
-                <h2 class="section-title">Koneksi</h2>
-                <div class="contact-links">
-                    <a class="btn" href="mailto:aethercodev@gmail.com">
-                        <span>✉</span> Email
-                    </a>
-                    <a class="btn" href="https://github.com/aethercodev">
-                        <span>⟨/⟩</span> GitHub
-                    </a>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div class="footer-content">
-                <div class="footer-text">
-                    © 2026 AetherCodev. Dibuat dengan presisi.
-                </div>
-                <div class="footer-links">
-                    <a href="https://github.com/aethercodev">GitHub</a>
-                </div>
-            </div>
-        </footer>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Lasains — Backend web developer</title>
+    <meta
+      name="description"
+      content="Portofolio Lasains, backend web developer dan mahasiswa Teknik Informatika dan Komputer di Makassar. Log proyek nyata: Nexventory dan Situtur AI."
+    />
+    <meta name="author" content="Lasains" />
+    <meta name="theme-color" content="#edefea" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lasains.github.io/" />
+    <meta property="og:title" content="Lasains — Backend web developer" />
+    <meta
+      property="og:description"
+      content="Log proyek backend: manajemen inventori dengan alur checkout QRIS, dan sistem pencatatan kerja dengan bot WhatsApp."
+    />
+    <meta property="og:image" content="https://lasains.github.io/images/lasains.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
