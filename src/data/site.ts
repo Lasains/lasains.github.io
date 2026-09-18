@@ -86,8 +86,7 @@ export const projects: Project[] = [
       "Menerapkan dynamic database resolver dan auto-migration runner saat startup aplikasi: sistem secara otomatis mendeteksi konfigurasi MySQL cloud/lokal dengan graceful fallback ke SQLite, mengeliminasi kegagalan cold start saat deployment ulang di cloud hosting.",
     stack: ["Python", "Flask", "SQLAlchemy", "Alembic", "MySQL", "Gunicorn"],
     links: [
-      { label: "Buka repo", href: "https://github.com/Lasains/Nexventory" },
-      { label: "Buka demo", href: "https://nexventory-ten.vercel.app" },
+      { label: "Buka repo", href: "https://github.com/Lasains/Nexventory" }
     ],
     live: true,
   },
