@@ -33,7 +33,7 @@ function LogEntry({ project }: { project: Project }) {
 
         <p className="max-w-[62ch]">{project.summary}</p>
 
-        <p className="max-w-[62ch] border-l border-hairline pl-4 text-[0.9375rem] text-muted-foreground">
+        <p className="max-w-[62ch] border-l-2 border-teal/40 bg-paper/50 py-1.5 pl-3.5 pr-2 text-[0.9375rem] text-muted-foreground">
           <span className="font-mono text-xs text-foreground">
             Keputusan teknis:{" "}
           </span>
@@ -54,9 +54,14 @@ function LogEntry({ project }: { project: Project }) {
         <div className="flex flex-wrap gap-2 pt-1">
           {project.links.map((link) => (
             <Button key={link.href} variant="outline" size="sm" asChild>
-              <a href={link.href} target="_blank" rel="noreferrer">
+              <a
+                href={link.href}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`${link.label} untuk proyek ${project.title} (buka di tab baru)`}
+              >
                 {link.label}
-                <ArrowUpRightIcon data-icon="inline-end" />
+                <ArrowUpRightIcon data-icon="inline-end" aria-hidden="true" />
               </a>
             </Button>
           ))}

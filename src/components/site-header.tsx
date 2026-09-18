@@ -24,20 +24,26 @@ export function SiteHeader() {
           </span>
         </a>
 
-        <nav aria-label="Navigasi halaman" className="flex items-center gap-1">
-          <div className="hidden items-center gap-1 sm:flex">
+        <nav aria-label="Navigasi halaman" className="flex items-center gap-0.5 sm:gap-1">
+          <div className="flex items-center gap-0.5 sm:gap-1">
             {navItems.map((item) => {
               const isActive = activeId === item.href.replace("#", "")
 
               return (
-                <Button key={item.href} variant="ghost" size="sm" asChild>
+                <Button
+                  key={item.href}
+                  variant="ghost"
+                  size="sm"
+                  className="px-2 text-xs sm:px-2.5 sm:text-sm"
+                  asChild
+                >
                   <a
                     href={item.href}
                     aria-current={isActive ? "true" : undefined}
                     className={cn(
                       "relative",
                       isActive &&
-                        "after:absolute after:inset-x-2.5 after:-bottom-0.5 after:h-px after:bg-signal"
+                        "after:absolute after:inset-x-1.5 after:-bottom-0.5 after:h-0.5 after:bg-signal sm:after:inset-x-2.5"
                     )}
                   >
                     {item.label}
@@ -47,10 +53,21 @@ export function SiteHeader() {
             })}
           </div>
 
-          <Button variant="ghost" size="sm" asChild>
-            <a href={profile.github} target="_blank" rel="noreferrer">
-              GitHub
-              <ArrowUpRightIcon data-icon="inline-end" />
+          <Button
+            variant="ghost"
+            size="sm"
+            className="px-2 text-xs sm:px-2.5 sm:text-sm"
+            asChild
+          >
+            <a
+              href={profile.github}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Profil GitHub Lasains (buka di tab baru)"
+            >
+              <span className="hidden sm:inline">GitHub</span>
+              <span className="sm:hidden">GH</span>
+              <ArrowUpRightIcon data-icon="inline-end" aria-hidden="true" />
             </a>
           </Button>
         </nav>

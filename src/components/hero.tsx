@@ -41,7 +41,7 @@ function Portrait() {
           srcSet={`${profile.photo} 1x, ${profile.photoRetina} 2x`}
           alt={`Foto ${profile.username}`}
           loading="eager"
-          className="rounded-none"
+          className="rounded-none object-cover"
         />
         <AvatarFallback className="rounded-none font-mono text-base text-muted-foreground">
           {profile.initials}

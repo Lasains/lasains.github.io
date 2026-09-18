@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lasains.github.io/sitemap.xml

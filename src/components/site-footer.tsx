@@ -14,6 +14,7 @@ export function SiteFooter() {
           href={profile.repo}
           target="_blank"
           rel="noreferrer"
+          aria-label="Lihat repositori kode situs ini di GitHub (buka di tab baru)"
           className="underline-offset-4 transition-colors hover:text-foreground hover:underline"
         >
           Kode situs ini

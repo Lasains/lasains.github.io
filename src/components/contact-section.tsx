@@ -58,9 +58,14 @@ export function ContactSection() {
         </span>
 
         <Button variant="outline" className="w-fit" asChild>
-          <a href={profile.github} target="_blank" rel="noreferrer">
+          <a
+            href={profile.github}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Kunjungi profil github.com/Lasains (buka di tab baru)"
+          >
             github.com/Lasains
-            <ArrowUpRightIcon data-icon="inline-end" />
+            <ArrowUpRightIcon data-icon="inline-end" aria-hidden="true" />
           </a>
         </Button>
       </div>

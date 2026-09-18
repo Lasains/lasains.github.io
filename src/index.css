@@ -85,7 +85,7 @@
     --destructive: #8a3b2e;
     --border: var(--hairline);
     --input: var(--hairline);
-    --ring: var(--signal);
+    --ring: var(--ink);
     --radius: 2px;
 
     --content-width: 45rem;
@@ -114,7 +114,7 @@
     }
 
     :focus-visible {
-        outline: 2px solid var(--signal);
+        outline: 2px solid var(--ink);
         outline-offset: 2px;
     }
 
