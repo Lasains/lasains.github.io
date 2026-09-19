@@ -139,7 +139,7 @@ export const stackGroups: StackGroup[] = [
   },
   {
     label: "AI & Workflow",
-    items: ["Prompt Engineering", "AI-Assisted Dev"],
+    items: ["Prompt Engineering", "Back-End Web Development"],
   },
   {
     label: "Build",
